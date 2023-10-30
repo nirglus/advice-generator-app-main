@@ -17,7 +17,7 @@ section{
     align-items: center;
     border-radius: 10px;
     width: 250px;
-    padding: 5%;
+    padding: 20px;
     height: 300px;
 }
 .imgPattern{
@@ -26,4 +26,13 @@ section{
     background-repeat: no-repeat;
     height: 4vh;
     width: 250px;
+}
+#adviceBtn{
+    position: absolute;
+    transform: translate(0, 165px);
+    border-radius: 50%;
+    border: 0;
+    height: 55px;
+    width: 55px;
+    background-color: hsl(150, 100%, 66%);
 }
