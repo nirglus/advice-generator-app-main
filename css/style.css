@@ -20,3 +20,10 @@ section{
     padding: 5%;
     height: 300px;
 }
+.imgPattern{
+    background-image: url(/images/pattern-divider-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4vh;
+    width: 250px;
+}
