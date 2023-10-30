@@ -10,3 +10,7 @@ const fetchAdvice = () => {
         advice.innerHTML = `"${data.slip.advice}"`
        })
 }
+const adviceGenBtn = document.getElementById("adviceBtn");
+adviceGenBtn.addEventListener("click", () =>{
+    fetchAdvice();
+})
