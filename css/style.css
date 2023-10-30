@@ -20,6 +20,12 @@ section{
     padding: 20px;
     height: 300px;
 }
+.cardTitle{
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+    font-size: 10px;
+}
 .imgPattern{
     background-image: url(/images/pattern-divider-mobile.svg);
     background-size: contain;
@@ -29,7 +35,7 @@ section{
 }
 #adviceBtn{
     position: absolute;
-    transform: translate(0, 165px);
+    transform: translate(0, 170px);
     border-radius: 50%;
     border: 0;
     height: 55px;
