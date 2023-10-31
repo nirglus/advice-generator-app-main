@@ -1,16 +1,5 @@
 @import "./variables";
-
-@mixin flexCenter($direction){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
-}
-
-@mixin widthHeight($width, $height){
-    width: $width;
-    height: $height;
-}
+@import "./layout-mixins";
 
 body{
     @include flexCenter(column);
