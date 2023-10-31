@@ -30,7 +30,7 @@ section h1{
     text-align: center;
 }
 .imgPattern{
-    background-image: url(/images/pattern-divider-mobile.svg);
+    background-image: url(../images/pattern-divider-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
     height: 4vh;
@@ -65,7 +65,7 @@ section h1{
         transform: translate(0, 150px);
     }
     .imgPattern{
-        background-image: url(/images/pattern-divider-desktop.svg);
+        background-image: url(../images/pattern-divider-desktop.svg);
         width: 400px;
     }
 }
