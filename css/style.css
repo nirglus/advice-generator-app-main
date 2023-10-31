@@ -60,7 +60,7 @@ section h1 {
 @media (min-width: 768px) {
   section {
     width: 500px;
-    height: 500px;
+    height: 300px;
     padding: 0;
   }
   section h1 {

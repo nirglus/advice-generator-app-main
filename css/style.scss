@@ -1,7 +1,4 @@
-$primaryBg: hsl(218, 23%, 16%);
-$cardBg: hsl(217, 19%, 24%);
-$txtColor: hsl(193, 38%, 86%);
-$buttonColor: hsl(150, 100%, 66%);
+@import "./variables";
 
 @mixin flexCenter($direction){
     display: flex;
@@ -62,7 +59,7 @@ section{
 }
 @media (min-width: 768px){
     section{
-        @include widthHeight(500px, 500px);
+        @include widthHeight(500px, 300px);
         padding: 0;
     }
     section h1{
