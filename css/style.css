@@ -50,3 +50,13 @@ section h1{
     cursor: pointer;
     box-shadow: 0px 0px 17px 5px rgba(82,255,168,0.72);
 }
+@media (min-width: 768px){
+    section{
+        width: 650px;
+        padding: 0 20px;
+        height: 400px;
+    }
+    #adviceBtn{
+        transform: translate(0, 200px);
+    }
+}
