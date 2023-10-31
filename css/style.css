@@ -58,7 +58,8 @@ section h1{
     }
     section h1{
         font-size: 23px;
-        width: 350px;
+        width: 370px;
+        margin-bottom: 30px;
     }
     #adviceBtn{
         transform: translate(0, 150px);
