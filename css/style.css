@@ -54,9 +54,13 @@ section h1{
     section{
         width: 650px;
         padding: 0 20px;
-        height: 400px;
+        height: 370px;
     }
     #adviceBtn{
-        transform: translate(0, 200px);
+        transform: translate(0, 185px);
+    }
+    .imgPattern{
+        background-image: url(/images/pattern-divider-desktop.svg);
+        width: 600px;
     }
 }

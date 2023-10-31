@@ -1,5 +1,5 @@
-const fetchAdvice = () => {
-    const url = `https://api.adviceslip.com/advice`;
+const fetchAdvice = (id = '') => {
+    const url = `https://api.adviceslip.com/advice${id}`;
     fetch(url)
        .then(res => res.json())
        .then(data => {
@@ -14,3 +14,4 @@ const adviceGenBtn = document.getElementById("adviceBtn");
 adviceGenBtn.addEventListener("click", () =>{
     fetchAdvice();
 })
+fetchAdvice(`/117`);
