@@ -1,0 +1,80 @@
+$primaryBg: hsl(218, 23%, 16%);
+$cardBg: hsl(217, 19%, 24%);
+$txtColor: hsl(193, 38%, 86%);
+$buttonColor: hsl(150, 100%, 66%);
+
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin widthHeight($width, $height){
+    width: $width;
+    height: $height;
+}
+
+body{
+    @include flexCenter(column);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    background-color: $primaryBg;
+}
+section{
+    @include flexCenter(column);
+    @include widthHeight(250px, 300px);
+    background-color: $cardBg;
+    color: $txtColor;
+    border-radius: 10px;
+    padding: 0 20px;
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.cardTitle{
+    text-transform: uppercase;
+    color: $buttonColor;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+.imgPattern{
+    @include widthHeight(250px, 4vh);
+    background-image: url(../images/pattern-divider-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#adviceBtn{
+    @include widthHeight(55px, 55px);
+    position: absolute;
+    transform: translate(0, 150px);
+    border-radius: 50%;
+    border: 0;
+    background-color: $buttonColor;
+    transition: box-shadow 0.3s;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 17px 5px rgba(82,255,168,0.72);
+    }
+}
+@media (min-width: 768px){
+    section{
+        @include widthHeight(500px, 500px);
+        padding: 0;
+    }
+    section h1{
+        font-size: 23px;
+        width: 370px;
+        margin-bottom: 30px;
+    }
+    #adviceBtn{
+        transform: translate(0, 150px);
+    }
+    .imgPattern{
+        background-image: url(../images/pattern-divider-desktop.svg);
+        width: 400px;
+    }
+}
